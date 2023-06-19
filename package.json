@@ -4,11 +4,13 @@
   "description": "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded app/scss:dist/css",
+    "sass-prod": "sass --no-source-map --style=compressed app/scss:dist/css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kariz-dev/fm-results-summary-component.git"
+    "url": "https://github.com/kariz-dev/fm-results-summary-component.git"
   },
   "keywords": [
     "frontend",
@@ -20,7 +22,7 @@
     "url": "https://github.com/kariz-dev/fm-results-summary-component/issues"
   },
   "homepage": "https://github.com/kariz-dev/fm-results-summary-component#readme",
-  "dependencies": {
-    "node-sass": "^9.0.0"
+  "devDependencies": {
+    "sass": "^1.63.4"
   }
 }

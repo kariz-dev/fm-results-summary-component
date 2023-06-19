@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Hanken";
+  src: url("../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  overflow: hidden;
+  background: #ECF2FF;
+  font-family: "Hanken", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card {
+  background: #FFFFFF;
+  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.main .card .result {
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 54px 55px;
+}
+.main .card .result h2.title {
+  color: #CAC9FF;
+  font-family: "Hanken", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.main .card .result .point {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0 28px;
+}
+.main .card .result .point h3 {
+  font-family: "Hanken", sans-serif;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-size: 72px;
+  line-height: 1.1;
+  text-align: center;
+}
+.main .card .result .point h3 span.light {
+  font-family: "Hanken", sans-serif;
+  font-weight: 700;
+  display: block;
+  font-size: 18px;
+  color: #CAC9FF;
+}
+.main .card .result .status {
+  max-width: 260px;
+  text-align: center;
+}
+.main .card .result .status h4.title {
+  font-family: "Hanken", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFFFFF;
+  margin: 0 0 14px;
+}
+.main .card .result .status p.desc {
+  font-family: "Hanken", sans-serif;
+  font-weight: 300;
+  color: #CAC9FF;
+  font-size: 18px;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+// Colors
+$background_body: #ECF2FF;
+$background_gradient: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+$color_light: #CAC9FF;
+$color_white: #FFFFFF;
+$color_dark: #303B59;
+$color_red: #FF5555;
+$color_yellow: #FFB21E;
+$color_green: #00BB8F;
+$color_blue: #1125D6;
+
+// Font families
+$font_primary: "Hanken", sans-serif;
+
+// Font Sizes
+$normal: 300;
+$bold: 700;
+$extra-bold: 800;
+
+// Breakpoints
+$breakpoints: (
+  'mobile'  : 767px,
+  'tablet'  : 992px,
+  'desktop' : 1200px
+) !default;
