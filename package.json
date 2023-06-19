@@ -1,0 +1,26 @@
+{
+  "name": "fm-results-summary-component",
+  "version": "1.0.0",
+  "description": "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kariz-dev/fm-results-summary-component.git"
+  },
+  "keywords": [
+    "frontend",
+    "mentor"
+  ],
+  "author": "Muhammad Rizwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kariz-dev/fm-results-summary-component/issues"
+  },
+  "homepage": "https://github.com/kariz-dev/fm-results-summary-component#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
