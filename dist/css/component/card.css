@@ -1,9 +1,10 @@
-/* Error: Undefined variable.
+/* Error: Undefined mixin.
  *    ,
- * 10 |     background: $color_white;
- *    |                 ^^^^^^^^^^^^
+ * 9  | /   @include media ('mobile') {
+ * 10 | |     height: auto;
+ * 11 | \   }
  *    '
- *   app/scss/component/card.scss 10:17  root stylesheet */
+ *   app/scss/component/card.scss 9:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      background: $color_white;\a    \2502                  ^^^^^^^^^^^^\a    \2575 \a   app/scss/component/card.scss 10:17  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c    @include media ('mobile') {\a 10 \2502  \2502      height: auto;\a 11 \2502  \2514    }\a    \2575 \a   app/scss/component/card.scss 9:3  root stylesheet";
 }

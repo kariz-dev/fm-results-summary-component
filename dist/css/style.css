@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.3;
-  overflow: hidden;
   background: #ECF2FF;
   font-family: "Hanken", sans-serif;
 }
@@ -45,6 +44,7 @@ body {
 .btn-primary {
   font-family: "Hanken", sans-serif;
   font-weight: 700;
+  font-size: 18px;
   background: #303B59;
   border: none;
   border-radius: 128px;
@@ -59,6 +59,17 @@ body {
 .btn-primary:hover {
   background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
 }
+@media (max-width: 767px) {
+  .btn-primary {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .btn-primary {
+    margin-top: 24px;
+  }
+}
 
 .main {
   width: 100vw;
@@ -66,6 +77,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .main {
+    height: auto;
+  }
 }
 .main .card {
   background: #FFFFFF;
@@ -75,6 +91,13 @@ body {
   flex-direction: row;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .main .card {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+}
 .main .card .result {
   background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
   display: flex;
@@ -83,11 +106,24 @@ body {
   padding: 38px 54px 55px;
   border-radius: 0 32px 32px 0;
 }
+@media (max-width: 767px) {
+  .main .card .result {
+    border-radius: 0 0 32px 32px;
+    padding: 24px 56px 40px;
+    height: auto;
+  }
+}
 .main .card .result h2.title {
   color: #CAC9FF;
   font-family: "Hanken", sans-serif;
   font-weight: 700;
   margin: 0;
+  font-size: 24px;
+}
+@media (max-width: 767px) {
+  .main .card .result h2.title {
+    font-size: 18px;
+  }
 }
 .main .card .result .point {
   width: 200px;
@@ -99,6 +135,13 @@ body {
   align-items: center;
   margin: 35px 0 28px;
 }
+@media (max-width: 767px) {
+  .main .card .result .point {
+    margin: 24px;
+    width: 140px;
+    height: 140px;
+  }
+}
 .main .card .result .point h3 {
   font-family: "Hanken", sans-serif;
   font-weight: 800;
@@ -107,12 +150,23 @@ body {
   line-height: 1.1;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .main .card .result .point h3 {
+    font-size: 56px;
+  }
+}
 .main .card .result .point h3 span.light {
   font-family: "Hanken", sans-serif;
   font-weight: 700;
   display: block;
   font-size: 18px;
   color: #CAC9FF;
+  opacity: 0.52;
+}
+@media (max-width: 767px) {
+  .main .card .result .point h3 span.light {
+    font-size: 16px;
+  }
 }
 .main .card .result .status {
   max-width: 260px;
@@ -125,6 +179,12 @@ body {
   color: #FFFFFF;
   margin: 0 0 14px;
 }
+@media (max-width: 767px) {
+  .main .card .result .status h4.title {
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+}
 .main .card .result .status p.desc {
   font-family: "Hanken", sans-serif;
   font-weight: 300;
@@ -133,8 +193,18 @@ body {
   line-height: 1.3em;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .main .card .result .status p.desc {
+    font-size: 16px;
+  }
+}
 .main .card .summary {
   padding: 38px 40px;
+}
+@media (max-width: 767px) {
+  .main .card .summary {
+    padding: 24px 32px;
+  }
 }
 .main .card .summary h2.title {
   margin-top: 0;
@@ -144,10 +214,21 @@ body {
   font-family: "Hanken", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .main .card .summary h2.title {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+}
 .main .card .summary_list {
   width: 288px;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .main .card .summary_list {
+    width: 100%;
+  }
 }
 .main .card .summary_list_item {
   display: flex;
@@ -166,11 +247,23 @@ body {
   align-items: center;
   justify-content: start;
   gap: 12px;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .main .card .summary_list_item .float-left {
+    font-size: 16px;
+  }
 }
 .main .card .summary_list_item .float-right {
   font-family: "Hanken", sans-serif;
   font-weight: 700;
   color: #303B59;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .main .card .summary_list_item .float-right {
+    font-size: 16px;
+  }
 }
 .main .card .summary_list_item .float-right .pointof {
   opacity: 0.5;

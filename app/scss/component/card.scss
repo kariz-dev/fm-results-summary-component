@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
 
+  @include media ('mobile') {
+    height: auto;
+  }
+
   .card {
     background: $color_white;
     box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
@@ -13,6 +17,12 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
+
+    @include media ('mobile') {
+      flex-direction: column;
+      width: 100%;
+      border-radius: 0;
+    }
 
     .result {
       background: $background_gradient;
@@ -22,10 +32,21 @@
       padding: 38px 54px 55px;
       border-radius: 0 32px 32px 0;
 
+      @include media ('mobile') {
+        border-radius: 0 0 32px 32px;
+        padding: 24px 56px 40px;
+        height: auto;
+      }
+
       h2.title {
         color: $color_light;
         @include font-bold;
         margin: 0;
+        font-size: 24px;
+
+        @include media ('mobile') {
+          font-size: 18px;
+        }
       }
 
       .point {
@@ -43,6 +64,12 @@
         align-items: center;
         margin: 35px 0 28px;
 
+        @include media ('mobile') {
+          margin: 24px;
+          width: 140px;
+          height: 140px;
+        }
+
         h3 {
           @include font-extra-bold;
           color: $color_white;
@@ -50,11 +77,20 @@
           line-height: 1.1;
           text-align: center;
 
+          @include media ('mobile') {
+            font-size: 56px;
+          }
+
           span.light {
             @include font-bold;
             display: block;
             font-size: 18px;
             color: $color_light;
+            opacity: .52;
+
+            @include media ('mobile') {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -68,6 +104,11 @@
           font-size: 32px;
           color: $color_white;
           margin: 0 0 14px;
+
+          @include media ('mobile') {
+            font-size: 24px;
+            margin: 0 0 8px;
+          }
         }
 
         p.desc {
@@ -76,6 +117,10 @@
           font-size: 18px;
           line-height: 1.3em;
           margin: 0;
+
+          @include media ('mobile') {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -83,18 +128,31 @@
     .summary {
       padding: 38px 40px;
 
+      @include media ('mobile') {
+        padding: 24px 32px;
+      }
+
       h2.title {
         margin-top: 0;
         margin-bottom: 28px;
         color: $color_dark;
         font-size: 24px;
         @include font-bold;
+
+        @include media ('mobile') {
+          margin-bottom: 24px;
+          font-size: 18px;
+        }
       }
 
       &_list {
         width: 288px;
         padding: 0;
         margin: 0;
+
+        @include media ('mobile') {
+          width: 100%;
+        }
 
         &_item {
           display: flex;
@@ -114,11 +172,21 @@
             align-items: center;
             justify-content: start;
             gap: 12px;
+            font-size: 18px;
+
+            @include media ('mobile') {
+              font-size: 16px;
+            }
           }
 
           .float-right {
             @include font-bold;
             color: $color_dark;
+            font-size: 18px;
+
+            @include media ('mobile') {
+              font-size: 16px;
+            }
 
             .pointof {
               opacity: .5;
