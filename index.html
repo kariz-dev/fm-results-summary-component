@@ -1,113 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Style -->
-  <link rel="stylesheet" href="./dist/css/style.css">
+    <title>Frontend Mentor | Results summary component</title>
 
-</head>
-<body>
-
-  <main class="main">
-    <div class="card">
-      <div class="result">
-        <h2 class="title">Your Result</h2>
-        <div class="point">
-          <h3>76 <span class="light">of 100</span></h3>
+    <!-- Style -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="card">
+        <div class="result">
+          <h2 class="title">Your Result</h2>
+          <div class="point">
+            <h3>76 <span class="light">of 100</span></h3>
+          </div>
+          <div class="status">
+            <h4 class="title">Great</h4>
+            <p class="desc">
+              Your performance exceed 65% of the people conducting the test
+              here!
+            </p>
+          </div>
         </div>
-        <div class="status">
-          <h4 class="title">Great</h4>
-          <p class="desc">Your performance exceed 65% of the people conducting the test here!</p>
+        <div class="summary">
+          <h2 class="title">Summary</h2>
+          <ul id="summary_list" class="summary_list"></ul>
+          <form method="get" action="/">
+            <button class="btn-primary" type="submit">Continue</button>
+          </form>
         </div>
       </div>
-      <div class="summary">
-        <h2 class="title">Summary</h2>
-        <ul class="summary_list">
-          <li class="summary_list_item reaction">
-            <div class="float-left">
-              <img class="icon" src="./assets/images/icon-reaction.svg" alt="reaction">
-              <p class="name">Reaction</p>
-            </div>
-            <div class="float-right">
-              <span class="point">80</span>
-              <span class="pointof"> / 100</span>
-            </div>
-          </li>
-          <li class="summary_list_item memory">
-            <div class="float-left">
-              <img class="icon" src="./assets/images/icon-memory.svg" alt="memory">
-              <p class="name">Memory</p>
-            </div>
-            <div class="float-right">
-              <span class="point">92</span>
-              <span class="pointof"> / 100</span>
-            </div>
-          </li>
-          <li class="summary_list_item verbal">
-            <div class="float-left">
-              <img class="icon" src="./assets/images/icon-verbal.svg" alt="verbal">
-              <p class="name">Verbal</p>
-            </div>
-            <div class="float-right">
-              <span class="point">61</span>
-              <span class="pointof"> / 100</span>
-            </div>
-          </li>
-          <li class="summary_list_item visual">
-            <div class="float-left">
-              <img class="icon" src="./assets/images/icon-visual.svg" alt="visual">
-              <p class="name">Visual</p>
-            </div>
-            <div class="float-right">
-              <span class="point">73</span>
-              <span class="pointof"> / 100</span>
-            </div>
-          </li>
-        </ul>
-        <form method="get" action="/">
-          <button class="btn-primary" type="submit">Continue</button>
-        </form>
-      </div>
-    </div>
-  </main>
-<!-- 
-  
-  
-  
-
-  
-  
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  -->
-  <!-- <div id="data">dat</div> -->
-
-  <script src="/app/js/main.js"></script>
-</body>
+    </main>
+    <script src="/app/js/main.js"></script>
+  </body>
 </html>
