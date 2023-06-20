@@ -16,6 +16,24 @@
   font-weight: 800;
 }
 
+@mixin btn-primary {
+  font-family: $font_primary;
+  font-weight: 700;
+  background: $color_dark;
+  border: none;
+  border-radius: 128px;
+  color: $color_white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background: $background_gradient;
+  }
+}
+
 // Breakpoint
 @mixin respond-to($breakpoint) {
   // If the key exists in the map

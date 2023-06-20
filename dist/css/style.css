@@ -22,9 +22,47 @@ body {
   font-family: "Hanken", sans-serif;
 }
 
+.reaction {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+  color: #FF5555;
+}
+
+.memory {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+  color: #FFB21E;
+}
+
+.verbal {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+  color: #00BB8F;
+}
+
+.visual {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+  color: #1125D6;
+}
+
+.btn-primary {
+  font-family: "Hanken", sans-serif;
+  font-weight: 700;
+  background: #303B59;
+  border: none;
+  border-radius: 128px;
+  color: #FFFFFF;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 41px;
+}
+.btn-primary:hover {
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+
 .main {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +81,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 38px 54px 55px;
+  border-radius: 0 32px 32px 0;
 }
 .main .card .result h2.title {
   color: #CAC9FF;
@@ -93,6 +132,48 @@ body {
   font-size: 18px;
   line-height: 1.3em;
   margin: 0;
+}
+.main .card .summary {
+  padding: 38px 40px;
+}
+.main .card .summary h2.title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: #303B59;
+  font-size: 24px;
+  font-family: "Hanken", sans-serif;
+  font-weight: 700;
+}
+.main .card .summary_list {
+  width: 288px;
+  padding: 0;
+  margin: 0;
+}
+.main .card .summary_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  height: 56px;
+  border: none;
+  border-radius: 12px;
+}
+.main .card .summary_list_item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.main .card .summary_list_item .float-left {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+.main .card .summary_list_item .float-right {
+  font-family: "Hanken", sans-serif;
+  font-weight: 700;
+  color: #303B59;
+}
+.main .card .summary_list_item .float-right .pointof {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

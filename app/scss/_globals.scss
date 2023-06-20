@@ -23,3 +23,29 @@ body {
   background: $background_body;
   font-family: $font_primary;
 }
+
+.reaction {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+  color: #FF5555;
+}
+
+.memory {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+  color: #FFB21E;
+}
+
+.verbal {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+  color: #00BB8F;
+
+}
+
+.visual {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+  color: #1125D6;
+}
+
+.btn-primary {
+  @include btn-primary;
+  margin-top: 41px;
+}

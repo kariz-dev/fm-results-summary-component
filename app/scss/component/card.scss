@@ -1,6 +1,6 @@
 .main {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@
       flex-direction: column;
       align-items: center;
       padding: 38px 54px 55px;
+      border-radius: 0 32px 32px 0;
 
       h2.title {
         color: $color_light;
@@ -75,6 +76,54 @@
           font-size: 18px;
           line-height: 1.3em;
           margin: 0;
+        }
+      }
+    }
+
+    .summary {
+      padding: 38px 40px;
+
+      h2.title {
+        margin-top: 0;
+        margin-bottom: 28px;
+        color: $color_dark;
+        font-size: 24px;
+        @include font-bold;
+      }
+
+      &_list {
+        width: 288px;
+        padding: 0;
+        margin: 0;
+
+        &_item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 18px 16px;
+          height: 56px;
+          border: none;
+          border-radius: 12px;
+
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+
+          .float-left {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 12px;
+          }
+
+          .float-right {
+            @include font-bold;
+            color: $color_dark;
+
+            .pointof {
+              opacity: .5;
+            }
+          }
         }
       }
     }
