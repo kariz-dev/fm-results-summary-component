@@ -19,7 +19,7 @@ $extra-bold: 800;
 
 // Breakpoints
 $breakpoints: (
-  'mobile'  : 767px,
-  'tablet'  : 992px,
-  'desktop' : 1200px
+  'mobile'  : ( max-width:  767px ),
+  'tablet'  : ( max-width:  992px ),
+  'desktop' : ( max-width:  1200px )
 ) !default;
